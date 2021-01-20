@@ -16,6 +16,7 @@ var server = http.createServer(function(req, resp){
 			fileName = "." + path;
 		}
 	}
+	console.log("Gil is here");
 	console.log("request path:", path, " fileName:", fileName, " contentType:", contentType);	
 	fileSystem.readFile(fileName, function(error, fileContent){
 		if(error){
